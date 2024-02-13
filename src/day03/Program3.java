@@ -1,4 +1,5 @@
 package day03;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,8 +14,7 @@ public class Program3 {
 		driver.get("https://demo.automationtesting.in/Register.html");
 		driver.findElement(By.xpath("//span[@aria-labelledby='select2-country-container']")).click();
 		driver.findElement(By.xpath("//input[@class='select2-search__field']")).sendKeys("India");
-		driver.findElement(By.xpath("//li[@class='select2-results_option select2-results_option--highlighted']")).click();
-		
+		driver.findElement(By.xpath("//li[text()='India']")).click();
 		
 	}
 
